@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK FITNESS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <style>
+        /* CSS Reset */
+        body{
+            font-family: Baloo Bhai,cursive ;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/rock.jpg');
+            background-size: 100%;
+        }
+        .left{
+            font-family: 'Tangerine', serif;
+            /* font-weight: 25px */
+            position: absolute;
+            left: 30px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid red; */
+            background-color: white;
+        }
+        /* .left img{
+            width: 150px;
+        } */
+        .left div{
+            line-height: 20px;
+            font-size: 30px;
+            /* font-weight: 4rem; */
+            text-align: center;
+            color: rgb(12, 13, 13);
+        }
+        .mid{
+            display: block;
+            width: 53%;
+            margin: 20px auto;
+            /* border: 2px solid rgb(23, 224, 67);  */
+        }
+        .right{
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid rgb(215, 243, 10); */
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            color: white;
+            font-size: 25px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover,.navbar li a.active{
+            color: rgb(7, 10, 8);
+            text-decoration: underline;
+            
+        }
+        .btn{
+            font-family: Baloo Bhai,cursive ;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 5px 15px; 
+            /* border: 2px solid grey; */
+            border-radius: 10px;
+            font-size:20px ;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(57, 51, 41);
+        }
+        .container{
+            margin: 125px 400px;
+            padding: 50px 50px;
+            width: 33%;
+            /* border: 2px solid rgb(155, 225, 155); */
+            border-radius: 10px;
+        }
+        .form-group input{
+            font-family: Baloo Bhai,cursive ;
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 5px;
+            border: 2px solid #c7cd38;
+            margin: 10px auto;
+            font-size: 20px;
+        }
+        .container h1{
+            text-align: center;
+        }   
+        .container button{
+            display: block;
+            width: 23%;
+            margin: 30px auto;
+
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/download.png" alt="">
+            <div><b>ROCK FITNESS</b></div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a> </li>
+                <li><a href="#">About us</a> </li>
+                <li><a href="#"> Fitness Calculator</a></li>
+                <li><a href="#"> Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for bottons -->
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join my gym now </h1> 
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
